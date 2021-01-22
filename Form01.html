@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Form Example 1</title>
+      <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+
+<body>
+
+  <!-- forms started with the idea of sending encloded data to back up to a webiste -->
+  <!-- <form name = "mainFrom" action="http:// mywebsite/action_page"></form> -->
+  <!-- which we may well do in other projects later, but for now, we want to got to a js function -->
+
+<!-- return set to false to prevent default form submission to a URL -->
+<form name = "mainFrom" onsubmit="return false">
+<!--       The <fieldset> tag is used to group related elements in a form. -->
+	<fieldset id="custInfo">
+    <!--       The <legend> tag is puts a title on this subset of the form -->
+    <legend>Customer Information</legend>
+    <!--       for= some id connects the lable to to the input box -->
+   <label for="custname"> Name:</label> 
+    <input name="custname" id="custname" />
+    <br>  <br>
+     <label for="city">City:</label>
+    <input name="city" id="city" />
+      <br>  <br>
+	
+    <label for="payment">Payment Preference</label>
+    <select name="payment" id="payment" >
+      <option value="cash">Cash</option>
+      <option value="visa">VISA or MC</option>
+      <option value="debit">Debit</option>
+    </select>
+    <br> <br>
+      <!-- here we submit to a local js file -->
+    <input type="submit" value="Submit" onclick="formSubmitEvent()">
+    </fieldset>
+</form>
+<br><br><br>
+<div id="mycusInfo" >
+
+ <h2>My Customers</h2>
+
+ <ul id ="cusList"></ul>
+</div>
+
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

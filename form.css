@@ -1,0 +1,54 @@
+fieldset {
+
+
+    background-color: rgb(255, 246, 205);
+    border: 1px solid rgb(233, 69, 0);
+    margin: 10px 0px 30px 2.5%;
+    width: 30%;
+}
+
+#mycusInfo {
+    background-color: rgb(255, 246, 205);
+    border: 1px solid rgb(233, 69, 0);
+    margin: 10px 0px 30px 2.5%;
+    width: 32%;
+    min-height: 150px
+}
+
+legend {
+
+    width: 95%;
+    background-color: orangered;
+    color: white;
+    padding: 8px;
+}
+
+label {
+    display: inline-block;
+    width:130px;
+
+
+}
+
+input,
+select {
+    padding: 5px 10px;
+}
+
+
+
+/*  this overides the generic fieldset css setting for this item by id */
+#experience {
+    background-color: rgb(217, 227, 235);
+    border: 1px solid rgb(0, 167, 233);
+    margin: 10px 0px 30px 2.5%;
+    width: 46%;
+}
+
+h2 {
+    margin: 10px;
+}
+
+li {
+    font-weight: bold;
+}
